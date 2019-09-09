@@ -19,7 +19,7 @@ class JobspiderSpider(scrapy.Spider):
             print(p)
             job_name = p.xpath('//div[@class="job-info"]/h3/a/text()').extract()
             for j in job_name:
-                item['job']=j
+                item['job_name']=j
                 yield item
 
 

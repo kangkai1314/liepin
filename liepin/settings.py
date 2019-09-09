@@ -66,6 +66,7 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'liepin.pipelines.MongoDbPipeline': 300,
+    'liepin.pipelines.MysqlDbPipeline':300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,3 +92,4 @@ ITEM_PIPELINES = {
 
 MONGO_URI = 'mongodb://localhost:27017'
 MONGO_DB = "kangkai"
+
